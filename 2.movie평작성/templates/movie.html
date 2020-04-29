@@ -1,0 +1,17 @@
+<table border="1">
+
+    <!-- 자바의 foreach 구문이다 -->
+    <!-- list로 render(보냈다)한 것 -->
+
+    {% for item in list %}
+    
+    <tr>
+        <td><img src="{{item.medium_cover_image}}"></td>
+        <td>{{item.title}}</td>
+        <td>{{item.rating}}</td>
+        <td>{{item.synopsis}}</td>       
+    </tr>
+    
+    {% endfor %}
+    
+</table>

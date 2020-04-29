@@ -1,0 +1,262 @@
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+}
+
+h2, h3 {
+  font-weight: 700;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+
+.big-heading {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+/* Containers */
+
+.container-fluid{
+  padding: 7% 15%;
+}
+
+/* Scroll Indicator */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 6;
+  width: 100%;
+  background-color: #fff;
+}
+
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background: #f6f6f6;
+}
+
+.progress-bar {
+  height: 5px;
+  animation-direction: reverse;
+	background: #e5405e;
+  width: 0%;
+  /* background: linear-gradient(to right, #e5405e 0%, #ffdb3a 25%, #3fffa2 50%, #3fffa2 50%, #1a9be0 73%, #ba68ed 100%); */
+  background: linear-gradient(to right, #3fffa2 0%, #1a9be0 100%);
+}
+
+/* Sections */
+
+.colored-section {
+  background-color: #75D701;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #F8F8FF;
+}
+
+.colored-section_2 {
+  background-color: #9055A2;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 2rem;
+  background-color: #282c37;
+  transition: top 0.3s;
+  z-index: 5;
+  border-bottom: 3px solid #353848;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+
+#naverIdLogin {
+  padding-top: 0.5rem;
+}
+
+.nav-link.active {
+  color: #3ac569 !important;
+  border-bottom: 3px solid #3ac569 !important;
+}
+
+.nav-link:hover {
+  color: #3ac569 !important;
+  border-bottom: 3px solid #fbd14b;
+}
+/* Title Section */
+
+#title .container-fluid {
+  margin-top: 4rem;
+  padding: 2% 10% 7%;
+    text-align: left;
+}
+/* Title Image */
+
+.title-image {
+  width: 60%;
+  position: absolute;
+  right: 5%;
+}
+
+/* About Section */
+
+#abt {
+  position: relative;
+  max-height: 300px;
+  height: 100%;
+}
+
+.feature-box {
+  position: relative;
+  top: 50%;
+	transform: translateY(-40%);
+}
+
+.abt-title {
+  font-size: 1.5rem;
+}
+
+.abt-box {
+  padding: 5%;
+}
+
+.icon {
+  color: #ff0000;
+  margin-bottom: 1rem;
+}
+.icon:hover {
+  color: #c72e45;
+}
+
+/* Testimonial Section */
+
+#testimonials {
+  background-color: #00a0ff;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* Work Section */
+
+#wrk {
+  position: relative;
+}
+
+#adh {
+  color: #282c37;
+}
+
+.white-section_2 {
+  background-color: #f4f4f4;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.modal-body {
+    position: relative;
+    overflow-y: auto;
+    max-height: 1200px;
+    padding: 15px;
+}
+
+.toon-img {
+  border-right: 3px solid #40ff40;
+  border-left: 3px solid #40ff40;
+}
+
+.comic-title {
+  padding-top: 2rem;
+}
+
+.card-title {
+  border-bottom: 1px solid #285943;
+  padding-bottom: 1rem;
+}
+
+.card-body {
+  background-color: #40ff40;
+}
+
+.card-text {
+  color: black;
+}
+
+.toon {
+  margin: 0 6rem 5rem;
+  border-top: 3px solid #40ff40;
+  border-bottom: none;
+}
+
+/* Footer Section */
+
+#footer {
+  background-color: #282c37;
+  max-height: 200px;
+  height: 100%;
+}
+
+#footer .container-fluid {
+  padding: 2.5% 15%;
+}
+
+.footer-icons {
+  margin: 10px 10px;
+  color: #fff;
+}
+
+@media (max-width: 1200px){
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
+}

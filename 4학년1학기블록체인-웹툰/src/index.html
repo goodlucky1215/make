@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Naver -->
+  <script type="text/javascript" src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.0.js" charset="utf-8"></script>
+
+  <!-- App icon -->
+  <link rel="icon" href="./images/app-icon.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900|Ubuntu" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+
+  <title>Toon & Ad</title>
+</head>
+
+<body>
+  <!-- Scroll Indicator -->
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href=""><img src="./images/logo.png" alt="" width="200" height="70"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#abt">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#wrk">Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Contact</a>
+        </li>
+        <div id="naverIdLogin"></div>
+        <!-- //네이버아이디로로그인 버튼 노출 영역 -->
+
+        <!-- 네이버아디디로로그인 초기화 Script -->
+        <script type="text/javascript">
+          var naverLogin = new naver.LoginWithNaverId({
+            clientId: "EXyjmrDVTnzxlYOS8xEG",
+            callbackUrl: "http://localhost:3000/login.html",
+            isPopup: false,
+            /* 팝업을 통한 연동처리 여부 */
+            loginButton: {
+              color: "green",
+              type: 1,
+              height: 30
+            } /* 로그인 버튼의 타입을 지정 */
+          });
+
+          /* 설정정보를 초기화하고 연동을 준비 */
+          naverLogin.init();
+        </script>
+      </ul>
+
+    </div>
+
+  </nav>
+  <section class="colored-section" id="title">
+    <div class="container-fluid">
+
+      <!-- Title -->
+    <div style="height: 80px">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="big-heading">Navor</h1>
+          <form class="form-inline">
+            <button type="button" onclick="window.location.href='#wrk'" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> 시작하기</button>
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn-white btn-outline-dark-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+
+        </div>
+        <div class="col-lg-6">
+          <img class="title-image" src="images/pay-per-click.png" alt="Image" style="width: 15rem;">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="white-section" id="abt">
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-dice-one fa-4x"></i>
+          <h3 class="feature-title">광고 보기</h3>
+          <p>광고를 보고 토큰 쌓자!</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-dice-two fa-4x"></i>
+          <h3 class="feature-title">토큰 사용</h3>
+          <p>유료 콘텐츠를 무료로!</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-dice-three fa-4x"></i>
+          <h3 class="feature-title">즐기러 가기</h3>
+          <p>토큰을 쌓았으면 즐겨주세요!</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Testimonials -->
+
+  <section class="colored-section" id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#testimonial-carousel" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">ㄹㅇ 혜자 모두들 하세요. 굳이 불법 사이트에 들어가서 볼 이유가 없어짐; </h2>
+          <img class="testimonial-image" src="images/user.png" alt="person-profile">
+          <em>사용자</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">광고주인데, 어떤 시청자가 봤는지 알 수 있어 좋습니다. 광고주들에게 추천!</h2>
+          <img class="testimonial-image" src="images/girl.png" alt="person-profile">
+          <em>나이스 광고주</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section class="white-section" id="wrk">
+    <div class="container">
+
+      <div class="row justify-content-center">
+        <div class="col-lg-12 mt-5">
+          <h1 class="text-center">토큰 받기!</h1>
+          <hr />
+          <br />
+        </div>
+
+        <div id="loader" class="col-lg-12">
+          <p class="text-center">Loading...</p>
+        </div>
+        <div id="content" style="display: none;">
+          <p class="text-center crt">
+            광고를 보고 Toon & Ad token(TAD)을 받으세요.
+            <!-- Token price is <span class="token-price"></span> Ether. -->
+            당신의 남은 토큰은 <span class="dapp-balance"></span>&nbsp;TAD 입니다.
+          </p>
+          <br />
+
+          <form onSubmit="App.buyTokens(); return false;" role="form">
+            <div class="text-center">
+              <!-- <button type="button" class="btn btn-primary btn-lg ad" onclick="location.href='ad.html'" />Watch AD</button> -->
+              <button type="button" id="ad-btn" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#myModal">광고보기</button>
+              <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <a href='https://smartstore.naver.com/shoemaniacs/products/4471295730?NaPm=ct%3Djvt80eg8%7Cci%3D74bed106da35be3e21bd2187c0f000265042de9a%7Ctr%3Dligh%7Csn%3D786797%7Cic%3D%7Chk%3D98eff1e2ba4c85f2e2a2000a5e0c9fae335df0b9'
+                        target="_blank"><img src="images/ad_addidas.PNG" class="img-responsive"></a>
+                    </div>
+                    <div class="modal-footer">
+                      <!-- <button type="button" class="btn btn-primary" id="countdown" data-dismiss="modal" disabled/> -->
+                      <button type="button" class="btn btn-secondary" id="confirm" data-dismiss="modal" disabled />
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-dark btn-lg" id="rcv" disabled>토큰받기</button>
+            </div>
+          </form>
+          <br>
+
+          <div class="progress">
+            <div id="progress" class="progress-bar progress-bar-striped active" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <p class="text-center">
+            <span class="tokens-sold"></span> / <span class="tokens-available"></span> tokens remain
+          </p>
+          <hr>
+
+          <p id="accountAddress" class="text-center"></p>
+          <br>
+          <br>
+
+          <div class="col-lg-12 mt-5">
+            <p class="text-center font-weight-lighter">
+            </p>
+            <p class="text-center font-weight-lighter font-italic">
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <section class="white-section_2">
+    <h3 class="text-center big-heading comic-title">웹툰 미리보기</h3>
+    <table>
+      <tbody>
+        <tr>
+          <td class="text-center">
+            <div class="card toon" style="width: 18rem;">
+              <img src="images/bellsprout.png" class="card-img-top toon-img" alt="cartoon-image">
+              <div class="card-body">
+                <h5 class="card-title">blockchain cartoon 3화 미리보기</h5>
+                <!-- <p class="card-text">Address: <span id="adh">0x6C3b80b9999cDa5DD64346F21f7DEB4051028052</span></p> -->
+                <p class="card-text">Address: <span id="adh">0x917123b7ba7eB1e113f5226a36d18C137C26B586</span></p>
+                <a href="#wrk" class="btn btn-dark buy" onclick="">구매</a>
+                <a href="https://comic.naver.com/webtoon/detail.nhn?titleId=641253&no=238&weekday=fri" target="_blank" class="btn btn-dark read">보러가기</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+
+    <div class="container-fluid">
+      <i class="footer-icons fab fa-twitter"></i>
+      <i class="footer-icons fab fa-facebook-f"></i>
+      <i class="footer-icons fab fa-instagram"></i>
+      <i class="footer-icons fas fa-envelope"></i>
+      <p>© Copyright 2019 T&A </p>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/truffle-contract.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/index.js"></script>
+  <script>
+    $(function() {
+      $('#confirm').click(function() {
+        if ($('#rcv').prop('disabled', true)) {
+          $('#rcv').prop('disabled', false);
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
