@@ -1,0 +1,373 @@
+    <!--초기화-->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: sans-serif;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        border: 0;
+      }
+      body {
+        background-image: url("1.jpg");
+        background-size: 100% 800px;
+
+        background-repeat: no-repeat;
+      }
+    </style>
+    <!--헤더-->
+    <style>
+      #main_header {
+        position: relative;
+      }
+      #main_logo {
+        padding: 30px 0 0 30px;
+        color:rgb(224, 93, 93);
+      }
+      #main_menu {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+      }
+      #main_menu > ul > li {
+        float: left;
+      }
+      #main_menu > ul > li > a {
+        color: white;
+        padding-left: 30px;
+      }
+      #main_reservation{
+        display: inline-block;
+        border: 30px white solid;
+        border-radius: 5px;
+        background: white;
+        width: 380px;
+        height: 400px;
+        margin: 30px 0 0 80px ;
+      }
+      #main_reservation{
+        color:inherit;
+        font-size: 29px;
+        font-weight: bold;
+      }
+      .res1, .res2, .res3 {
+        font-size: 13px;
+        font-weight: bold;
+        margin: 10px 0 10px 0;
+      }
+      .res2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .form1 {
+        padding:10px;
+        font-size: 18px;
+        width: 350px;
+        height: 25px;
+      }
+      .form2 {
+        padding:10px;
+        font-size: 18px;
+        width: 158px;
+        height: 25px;
+      }
+      .form3 {
+        padding:10px 10px 10px 0 ;
+        font-size: 15px;
+        color: gray;
+        width: 373px;
+        height: 40px;
+      }
+      #person{
+        border: 1px gray solid;
+        font-size: 18px;
+        width: 374px;
+        height: 49px;
+        background-color: white;
+        cursor: pointer;
+      }
+      #person_form{
+        position:relative;
+        z-index:2;
+        padding: 10px 0;
+        display: none;
+        height: 180px;
+        width: 100%;
+        overflow: hidden;
+        background-color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      .person_form1 {
+        display: flex;
+        padding-left: 10px;
+      }
+      .person_form2{
+        width: 12rem;
+        height: 4rem;
+        padding-right: 20px;
+      }
+      .person_form3 {
+        display: flex;
+        width: 200px;
+        height: 50px;
+        align-items: center;
+      }
+      .person_form3>.minu,
+      .person_form3>.plus{
+        margin: 15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: 0;
+        cursor: pointer;
+        outline: none;
+      }
+      .person_form3>.minu:hover,
+      .person_form3>.plus:hover{
+        background-color: rgb(167, 165, 165);
+      }
+      .person_form3>.minu>span,
+      .person_form3>.plus>span{
+        font-size: 30px;
+      }
+      .person_form3>div{
+        font-size: 20px;
+      }
+      #click {
+        position:relative;
+        z-index:1;
+        margin: 26px 0 0 295px;
+        border: 1px #FA5858 solid;
+        border-radius: 5px;
+        background-color: #FA5858;
+        width: 40px;
+        padding: 13px 13px 13px 23px;
+        font-size: 15px;
+      }
+      #click > a {
+        color: white;
+      }
+      #main_bottom {
+        position: absolute;
+        padding: 120px 0 0 1450px;
+        text-align: right;
+      }
+      #main_bottom > a {
+        color: white;
+      }
+    </style>
+    <!--목록1-->
+    <style>
+      #section1 {
+        width: 1700px;
+        margin: 0px auto;
+      }
+      #section_name1 {
+        margin-top: 140px;
+        padding: 50px 0 20px 80px;
+      }
+      #section_article1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0px 80px 20px 80px;
+      }
+      .article_image1{
+        width: 135px; height: 100%;
+      }
+      .article1 {
+        display: grid;
+        overflow: hidden;
+        border: 1px #E6E6E6 solid;
+        border-radius: 10px;
+        margin-right: 10px;
+        grid-template-columns: 100px 200px;
+      }
+      .article_name1 {
+        padding: 30px 145px 30px 60px;
+      }
+    </style>
+    <!--목록2-->
+    <style>
+    #section2 {
+      width: 1700px;
+      margin: 0 auto;
+    }
+    #section_name2 {
+      padding: 50px 0 20px 80px;
+    }
+    #section_article2{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      padding: 0px 80px 20px 80px;
+    }
+    .article_image2 {
+      width: 240px; height:100%;
+      overflow: hidden;
+      border-radius: 10px;
+      border: 1px white solid;
+    }
+    .article2 {
+      display: grid;
+      grid-template-rows: 350px 100px;
+    }
+    .article_name2 > a {
+      color: black;
+      font-size: 13px;
+      font-weight: bold;
+    }
+    </style>
+    <!--미니바1/미니바2-->
+    <style>
+    #minibar1, #minibar2{
+     overflow: hidden;
+    }
+    #minibar1 > a, #minibar2 > a{
+      display: inline-block;
+      font-size: 18px;
+      margin-left:80px;
+      border: 1px solid white;
+      border-radius: 10px;
+      padding: 10px 5px;
+      color: black;
+    }
+    #minibar1 > a:hover, #minibar2 > a:hover {
+      background: #F2F2F2;
+      color: black;
+    }
+    </style>
+    <!--목록3-->
+    <style>
+    #section3 {
+      width: 1700px;
+      margin: 0 auto;
+    }
+    #section_name3 {
+      padding: 50px 0 20px 80px;
+    }
+    #section_article3{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 0px 80px 20px 80px;
+    }
+    .article_image3 {
+      overflow: hidden;
+      width: 370px; height: 250px;
+      border-radius: 10px;
+      border: 1px white solid;
+    }
+    .article_name3{
+      padding-top: 10px;
+      padding-bottom: 30px;
+    }
+    .article_name3 > .n1 {
+      font-size: 12px;
+      font-weight: bold;
+      overflow: hidden;
+      border-radius: 5px;
+      border: 1px black solid;
+      padding: 3px;
+      margin-right: 10px;
+    }
+    .article_name3 > a {
+      color: #848484;
+      font-size: 14px;
+      display: inline-block;
+      width: 240px;
+      border: 1px white solid;
+    }
+    .article_name3 > .n2 {
+      color: #FF4000;
+      font-size: 14px;
+    }
+    .article_name3 > .n3 {font-size: 14px;}
+    .article_name3 > .n4 {margin-top: 30px;}
+    </style>
+    <!--목록4-->
+    <style>
+    #section4 {
+      width: 1700px;
+      margin: 0 auto;
+    }
+    #section_name4 {
+      padding: 50px 0 20px 80px;
+    }
+    #section_article4{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 0px 80px 20px 80px;
+    }
+    #section_article4 > .article_name4 > .n1 {
+      display: block;
+      font-weight: 550;
+    }
+    #section_article4 > .article_name4 > .n2 {
+      display: block;
+      color: #848484;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+    #footer_section1{
+      border-bottom: 1px #E6E6E6 solid;
+      margin-bottom: 20px;
+    }
+    </style>
+    <!--푸터-->
+    <style>
+    #bottom_menu {
+      display: grid;
+      width: 1000px;
+      margin: 0 auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .menu {
+      display: inline-block;
+      margin-left:130px;
+    }
+    .site_image{
+      display: grid;
+      grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+      padding: 40px 0 20px 0;
+    }
+    .menu > .title{
+      padding: 40px 0 20px 0;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .menu > .n1 {
+      display: grid;
+      grid-template-rows: auto;
+      font-size: 14px;
+      font-weight: bold;
+      color: gray;
+      padding-bottom: 20px;
+    }
+    #exc{
+      color: black;
+    }
+
+    #footer_section2{
+      width: 1000px;
+      margin: 0 auto;
+      border-bottom: 1px #E6E6E6 solid;
+      margin-bottom: 20px;
+    }
+    #bottom_menu1{
+      width: 1000px;
+      margin: 0 auto;
+      margin-left:350px;
+    }
+    #bottom_menu2{
+      width: 1000px;
+      margin: 0 auto;
+      font-size: 14px;
+    }
+    </style>

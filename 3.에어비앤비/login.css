@@ -1,0 +1,188 @@
+<!--초기화-->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: sans-serif;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        border: 0;
+      }
+
+
+    <!--헤더-->
+      #main_header {
+        position: relative;
+      }
+      #main_logo {
+        padding: 30px 0 0 30px;
+        color:rgb(224, 93, 93);
+      }
+      #main_menu {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+      }
+      #main_menu > ul > li {
+        float: left;
+      }
+      #main_menu > ul > li > a {
+        padding-left: 30px;
+        color: black;
+      }
+      .line1{
+        border-bottom: 1px #E6E6E6 solid;
+        margin-bottom: 10px;
+          }
+
+    /* 로그인 */
+    #facebook_login {
+      width: 330px;
+      font-size: 15px;
+      padding: 10px;
+      background-color: blue;
+      color: white;
+      border: 2px solid blue;
+      border-radius: 5px;
+      font-weight: bolder;
+  }
+  .fa-facebook-f{
+    padding-right:10px;
+  }
+  #google_login{
+    width: 330px;
+    font-size: 15px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: 2px solid gray;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+.fa-google{
+  padding-right:10px;
+  color: blue;
+}
+    #login_password{
+         text-align: left; 
+         text-align: center; 
+         text-align: right; 
+         text-align: justify; 
+        margin: 60px 650px 60px 650px;
+        padding: 20px;
+        border: 1px #E6E6E6 solid;
+        width: 340px;
+    }
+    #id_box,
+    #email_box,
+    #password_box{
+      border:  2px #E6E6E6 solid;
+      border-radius: 5px;
+    }
+    #id,
+    #email,
+    #password{
+        width: 270px;
+        height: 30px;
+        font-size: 15px;
+        padding: 10px;
+        border: 0px;
+        outline:none;
+    }
+    .fa-phone,
+    .fa-envelope,
+    .fa-unlock-alt{
+      size:30px;
+      margin-right:6px;
+    }
+    .form1{
+      margin-bottom: 10px;
+     }
+    #password_see,
+    #email_login{
+        font-size: 13px;
+        color: green;
+        border:0;
+        background-color: white;
+        outline:none;
+    }
+    #password_see:hover,
+    #email_login:hover{
+      text-decoration: underline;
+   }
+   
+    #submit_login{
+        width: 330px;
+        font-size: 15px;
+        padding: 10px;
+        background-color: rgb(224, 93, 93);
+        color: white;
+        border: 0;
+        border-radius: 5px;
+    }
+    #add{
+        margin-top:20px;
+    }
+    #add > .a{
+        color: green;
+        font-weight: bolder;
+    }
+
+    <!--푸터-->
+    #bottom_menu {
+      display: grid;
+      width: 1000px;
+      margin: 0 auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .menu {
+      display: inline-block;
+      margin-left:130px;
+    }
+    .site_image{
+      display: grid;
+      grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+      padding: 40px 0 20px 0;
+    }
+    .menu > .title{
+      padding: 40px 0 20px 0;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .menu > .n1 {
+      display: grid;
+      grid-template-rows: auto;
+      font-size: 14px;
+      font-weight: bold;
+      color: gray;
+      padding-bottom: 20px;
+    }
+    #exc{
+      color: black;
+    }
+
+    #footer_section2{
+      width: 1000px;
+      margin: 0 auto;
+      border-bottom: 1px #E6E6E6 solid;
+      margin-bottom: 20px;
+    }
+    #bottom_menu1{
+      width: 1000px;
+      margin: 0 auto;
+      margin-left:350px;
+    }
+    #bottom_menu2{
+      width: 1000px;
+      margin: 0 auto;
+      font-size: 14px;
+    }
+    </style>
